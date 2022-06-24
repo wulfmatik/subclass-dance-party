@@ -2,7 +2,10 @@ $(document).ready(function() {
   window.dancers = [];
 
   $('.lineUpButton').on('click', function(event) {
-
+    window.dancers.forEach(function(dancer, index) {
+      console.log(dancer.top);
+      return dancer.lineUp(this.top, (index * 100));
+    });
   });
 
   $('.addDancerButton').on('click', function(event) {

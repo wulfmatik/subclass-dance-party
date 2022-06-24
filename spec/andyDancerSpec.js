@@ -13,7 +13,7 @@ describe('andyDancer', function() {
   });
 
   it('should have a step function that makes its node blink', function() {
-    sinon.spy(michaelDancer.$node, 'toggle');
+    sinon.spy(andyDancer.$node, 'toggle');
     andyDancer.step();
     expect(andyDancer.$node.toggle.called).to.be.true;
   });
