@@ -22,4 +22,5 @@ MakeMichaelDancer.prototype.step = function() {
       this.$node.stop().animate({width: '100px' }, 500);
     }
   }
+
 };
