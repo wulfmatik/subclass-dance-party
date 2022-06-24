@@ -16,6 +16,13 @@ MakeDancer.prototype.step = function() {
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
+// MakeDancer.prototype.move = function(top, left) {
+//   $(this).stop().animate({
+//     'top': top,
+//     'left': left
+//   }, 1000);
+// };
+
 MakeDancer.prototype.setPosition = function(top, left) {
   // Use css top and left properties to position our <span> tag
   // where it belongs on the page. See http://api.jquery.com/css/

@@ -2,6 +2,8 @@ body, html{
   height:100%;
 }
 body{
+  background: url("img/office.jpg") no-repeat;
+  background-size: 100%;
   margin: 0px;
   background-color:#444;
   font-size: 18px;
@@ -24,4 +26,19 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+.andyDancer {
+  position:absolute;
+  width: 400px;
+}
+
+.michaelDancer {
+  position:absolute;
+  width: 200px;
+}
+
+.tobyDancer {
+  position:absolute;
+  width: 400px;
 }
