@@ -3,8 +3,8 @@ $(document).ready(function() {
 
   $('.lineUpButton').on('click', function(event) {
     window.dancers.forEach(function(dancer, index) {
-      console.log(dancer.top);
-      return dancer.lineUp(this.top, (index * 100));
+      console.log(window.dancers);
+      return dancer.lineUp(this.top, (index * 200));
     });
   });
 
