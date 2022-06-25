@@ -12,10 +12,10 @@ describe('andyDancer', function() {
     expect(andyDancer.$node).to.be.an.instanceof(jQuery);
   });
 
-  it('should have a step function that makes its node blink', function() {
-    sinon.spy(andyDancer.$node, 'toggle');
+  it('should have a step function that makes its node rotate', function() {
+    sinon.spy(andyDancer.$node, 'css');
     andyDancer.step();
-    expect(andyDancer.$node.toggle.called).to.be.true;
+    expect(andyDancer.$node.css.called).to.be.true;
   });
 
   describe('dance', function() {
@@ -30,5 +30,9 @@ describe('andyDancer', function() {
       clock.tick(timeBetweenSteps);
       expect(andyDancer.step.callCount).to.be.equal(2);
     });
+  });
+
+  it ('should have a set position method', function() {
+    expect(!!andyDancer.setPosition).to.be.equal(true);
   });
 });

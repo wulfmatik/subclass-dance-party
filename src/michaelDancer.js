@@ -1,6 +1,7 @@
 var MakeMichaelDancer = function(top, left, timeBetweenSteps) {
   MakeDancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<img class="michaelDancer" src="img/michaelDancing-unscreen.gif">');
+  this.$node.addClass('gifDancer');
   this.setPosition(this.top, this.left);
   this.big = false;
   this.stopMoving = false;

@@ -23,8 +23,8 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  /* border:10px solid red; */
+  /* border-radius:10px; */
   position:absolute;
 }
 
@@ -40,5 +40,5 @@ body, a:link, a:visited, a:active{
 
 .tobyDancer {
   position:absolute;
-  width: 400px;
+  width: 150px;
 }

@@ -1,5 +1,6 @@
 $(document).ready(function() {
   window.dancers = [];
+  window.partner = {};
 
   $('.lineUpButton').on('click', function(event) {
     window.dancers.forEach(function(dancer, index) {
@@ -7,6 +8,8 @@ $(document).ready(function() {
       return dancer.lineUp(this.top, (index * 200));
     });
   });
+
+
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -34,8 +37,20 @@ $(document).ready(function() {
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
+
+    dancer.$node.on('mouseover', function(event) {
+      var tempDancer = {
+        top: parseFloat(event.target.style.top),
+        left: parseFloat(event.target.style.left)
+      };
+
+      dancer.findPair(tempDancer);
+    });
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
   });
+
 });
+
+
 

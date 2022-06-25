@@ -1,6 +1,7 @@
 var MakeAndyDancer = function(top, left, timeBetweenSteps) {
   MakeDancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<img class="andyDancer" src="img/andydancing.gif">');
+  this.$node.addClass('gifDancer');
   this.currentAngle = 0;
   this.setPosition(this.top, this.left);
 };
